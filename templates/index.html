@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block title %} 
+  Proacademy-Szkoła języka angielskiego Stargard 
+{% endblock %}
+
+
+      {% block main %}
+        <!--main image-section-->
+        <div class="main-image">
+          <img src="/static/final1.jpg" class="main-image">
+        </div>
+
+
+
+        <!--proacademy-text-->
+        <div class="text-container">
+          <p class="text">
+            Proacademy - think outside the box
+          </p>
+        </div>
+
+
+        <!--tabs presentation-->
+        <div class="tabs">
+          <div class="image-container">
+            <a href={{ url_for('kursy') }}><img src="/static/kursy.jpg" class="image"></a>
+            <div class="card-button">
+              <a href={{ url_for('kursy') }}>
+                <div class="text-block">
+                  <p class="text-card">kursy</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+
+
+          <div class="image-container">
+            <a href=""><img src="/static/cennik.jpg" class="image"></a>
+            <div class="card-button">
+              <a href="">
+                <div class="text-block">
+                  <p class="text-card">cennik</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <a href={{ url_for('lektorzy') }}><img src="/static/lektorzy.jpg" class="image"></a>
+            <div class="card-button">
+              <a href={{ url_for('lektorzy') }}>
+                <div class="text-block">
+                  <p class="text-card">lektorzy</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="image-container">
+            <a href=""><img src="/static/work.jpg" class="image"></a>
+            <div class="card-button">
+              <a href="">
+                <div class="text-block">
+                  <p class="text-card">work</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <a href="lektorzy.html"><img src="/static/about.jpg" class="image"></a>
+          <div class="card-button">
+            <a href="lektorzy.html">
+              <div class="text-block">
+                <p class="text-card">o nas</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <a href="kontakt.html"><img src="/static/about.jpg" class="image"></a>
+          <div class="card-button">
+            <a href="kontakt.html">
+              <div class="text-block">
+                <p class="text-card">kontakt</span></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="image-container">
+            <a href={{ url_for('login') }}><img src="/static/lektorzy.jpg" class="image"></a>
+            <div class="card-button">
+              <a href={{ url_for('login') }}>
+                <div class="text-block">
+                  <p class="text-card">lektorzy</span></p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        
+
+      {% endblock %}
+
+        

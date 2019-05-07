@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}
+    Proacademy - Logowanie
+{% endblock %}
+        
+        {% block main %}
+
+        <!--instructions-->
+        <div class="instr">
+            <h1 class="h1"><strong>Proacademy game</strong></h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            </p>
+            <!--login-->
+            <form action="/login" method="POST" id="login">
+                <div class="login-container">
+                    <div class="login-password">
+                        <div class="login-form">
+                            <input type="email" name="login" class="login-input" required placeholder="Email">
+                        </div>
+                        <div class="login-form">
+                            <input type="password" name="password" class="login-input"required placeholder="Hasło">
+                            <label for="password" class="login-exist">Podany adres istnieje w bazie.</label>
+                            <label for="password" class="login-exist">Chcesz się zalogować?</label>
+                        </div>
+                    </div>
+                    
+                        <!--<div class="button">
+                            <a href={{ url_for('hello') }} class="login-button">Login</a>
+                        </div>-->
+                        <a href={{ url_for('play') }}><input type="submit" class="login-button" value="Login"></a>
+                        
+                        <div class="register-container">
+                            <p class="no-login">Nie masz konta?</p>
+                            <p><a href={{ url_for('register') }}>Zarejestruj się!</a></p>
+                        </div>
+                </div>
+            </form>
+        </div>
+
+        {% endblock %}
+
+        

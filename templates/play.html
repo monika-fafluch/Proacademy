@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %} 
+    Gra Proacademy 
+{% endblock %}
+
+        {% block main %}
+        <!--instructions-->
+        <div class="instr">
+            <h1 class="h1"><strong>Proacademy game</strong></h1>
+            <hr>
+            <div class="logo-game">
+                <img src="/static/ludzik.png" class="ludzik" id="ludzik">
+            </div>
+            <div class="play-container">
+                <div class="play">
+                    <a href={{ url_for('audio1_0') }}>Poziom łatwy</a>
+                </div>
+                <div class="play">
+                    <a href={{ url_for('audio1_0') }}>Poziom średni</a>
+                </div>
+                <div class="play">
+                    <a href={{ url_for('audio1_0') }}>Poziom trudny</a>
+                </div>
+            </div>
+        </div>
+
+        {% endblock %}
+        
+
+        

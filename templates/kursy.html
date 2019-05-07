@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dokdo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!--Internal CSS stylesheet-->
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Proacademy-Kursy</title>
+  </head>
+  <body>
+      <div class="page">
+          <!--navbar section-->
+          <div class="header">
+            <div class="call-us">
+              <a href="tel:+48883135222"><img src="/static/call-us.png"></a>
+            </div>
+            <div class="logo">
+              <a href={{ url_for('hello') }}><img src="/static/proacademy.png"></a>
+            </div>
+            <nav class="navbar">
+              <ul>
+                <li>
+                  <img src="/static/hamburger2.png">
+                  <div class="dropdown-menu">
+                    <ul class="dropdown">
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="kursy.html">kursy</a></li>
+                      <li><a href="index.html">cennik</a></li>
+                      <li><a href="lektorzy.html">lektorzy</a></li>
+                      <li><a href="index.html">o nas</a></li>
+                      <li><a href="index.html">kontakt</a></li>
+                      <li><a href="index.html">gra <span><img src="/static/proacademy.png"></span></a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+        <!--kursy-dorosli-page-->
+          <div class="kursy-dorosli">
+              <div class="kursy-card">
+                  <div class="dorosli-header-container">
+                      <h3 class="dorosli-header"><strong>Dorosli</strong></h3>
+                  </div>
+                  <div class="dorosli-image-container">
+                      <img src="/static/dor.jpg" class="dorosli-image">
+                  </div>
+
+                  <div class="dorosli-text-container">
+                      <p class="dorosli-text">Tworzymy wyłącznie grupy uczniów w podobnym wieku będących na zbliżonym poziomie zaawansowania, aby umożliwić standaryzację długoterminowego planu nauczania oraz zapewnić jak największy komfort w nawiązywaniu relacji pomiędzy uczestnikami kursu. Jesteśmy otwarci na wszelkie sugestie dotyczące organizacji grup.</p>
+                  </div>
+              </div>
+
+
+
+              <div class="kursy-card">
+                  <div class="dorosli-header-container">
+                      <h3 class="dorosli-header">Dzieci</h3>
+                  </div>
+                  <div class="dorosli-image-container">
+                      <img src="/static/kid.jpg" class="dorosli-image">
+                  </div>
+
+                  <div class="dorosli-text-container">
+                      <p class="dorosli-text">Kursy z naszej oferty przeznaczone są dla dzieci od 6. roku życia – osiągnięcie zbliżonego wieku umożliwia bowiem swobodę komunikacji oraz ułatwia organizację pracy w grupie. W celu zapewnienia warunków jak najbardziej sprzyjających nieskrępowanej aktywności, staramy się tworzyć grupy mając na uwadze podobny wiek oraz indywidualne cechy uczniów.</p>
+                  </div>
+              </div>
+
+
+              <div class="kursy-card">
+                  <div class="dorosli-header-container">
+                      <h3 class="dorosli-header">Młodzież</h3>
+                  </div>
+                  <div class="dorosli-image-container">
+                      <img src="/static/mlo.jpg" class="dorosli-image">
+                  </div>
+
+                  <div class="dorosli-text-container">
+                      <p class="dorosli-text">Kursy dla młodzieży prowadzone są w założeniu jak najlepszego przygotowania uczniów do egzaminów oraz nabycia praktycznych umiejętności pozwalających na swobodną komunikację w języku angielskim. Posiadamy kadrę wykwalifikowanych lektorów będących w stanie sprostać wymaganiom naszych klientów.</p>
+                  </div>
+              </div>
+
+              <div class="kursy-card">
+                  <div class="dorosli-header-container">
+                      <h3 class="dorosli-header">Seniorzy</h3>
+                  </div>
+                  <div class="dorosli-image-container">
+                      <img src="/static/sen.jpg" class="dorosli-image">
+                  </div>
+
+                  <div class="dorosli-text-container">
+                      <p class="dorosli-text">Kierujemy naszą ofertę do osób w średnim i podeszłym wieku mając na uwadze specyfikę danego obszaru działalności na polu edukacji, zwłaszcza w dziedzinie nauczania języków obcych. Wbrew szeroko rozpowszechnionym opiniom przyswajanie wiedzy u osób starszych może przebiegać sprawnie i łączyć w sobie wiele zalet.</p>
+                  </div>
+              </div>
+
+              <div class="kursy-card">
+                  <div class="dorosli-header-container">
+                      <h3 class="dorosli-header">Kurs egzaminacyjny</h3>
+                  </div>
+                  <div class="dorosli-image-container">
+                      <img src="/static/exam.jpg" class="dorosli-image">
+                  </div>
+
+                  <div class="dorosli-text-container">
+                      <p class="dorosli-text"> Proacademy oferuje między innymi kursy przygotowawcze do międzynarodowych certyfikatów takich jak Cambridge FCE, CAE, CPE, BEC, ILEC; IELTS, TELC, TOEFL etc., a także do egzaminów państwowych: gimnazjalnego, maturalnego, oraz do egzaminów potwierdzających znajomość języka obcego dla kandydatów na urzędnika mianowanego Służby Cywilnej. Przygotowujemy również do praktycznych egzaminów na poszczególnych latach studiów filologicznych i NKJO.</p>
+                  </div>
+              </div>
+
+              <div class="kursy-card">
+                  <div class="dorosli-header-container">
+                      <h3 class="dorosli-header">Direct method</h3>
+                  </div>
+                  <div class="dorosli-image-container">
+                      <img src="/static/dir.jpg" class="dorosli-image">
+                  </div>
+
+                  <div class="dorosli-text-container">
+                      <p class="dorosli-text"> Metoda bezpośrednia skierowana jest dla osób pragnących szybko zacząć mówić po angielsku, dla których mniej ważnymi aspektami w nauce angielskiego jest pisanie esejów czy interpretowanie skomplikowanych gramatycznych ćwiczeń. Gramatyka oraz pisanie są w metodzie DIRECT wprowadzane w bardzo delikatny i wyważony sposób, co pomaga skupić zajęcia na nieustającej rozmowie w języku angielskim. Kolejną zaletą metody bezpośredniej jest możliwość jej stosowania niezależnie od wieku słuchaczy.</p>
+                  </div>
+              </div>
+          </div>
+
+          <hr>
+
+          <!--Footer-->>
+          <div class="footer">
+            <div class="copyright">
+              <h1>&copy; 2019 | Szkoła języka angielskiego | Stargard</h1>
+              <h2><em>All rights reserved.</em></h2>
+              <h2><em>Powered by Proacademy. Created by Proacademy.</em></h2>
+            </div>
+
+
+            <div class="media-icons">
+              <img src="facebook.png">
+              <img src="twitter.png">
+              <img src="youtube.png">
+              <img src="instagram.png">
+            </div>
+          </div>
+
+
+      </div>
+  </body>
+</html>

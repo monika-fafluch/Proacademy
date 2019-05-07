@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dokdo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <!--Internal CSS stylesheet-->
+    <link href="/static/styles.css" rel="stylesheet">
+    <title> {% block title %} {% endblock %}</title>
+  </head>
+
+
+  <body>
+    <div class="page">
+        <!--header-->
+        <div class="header">
+          <div class="call-us">
+            <a href="tel:+48883135222"><img src="/static/call-us.png"></a>
+          </div>
+          <div class="logo">
+            <a href={{ url_for('hello') }}><img src="/static/proacademy.png"></a>
+          </div>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <img src="/static/hamburger2.png">
+                <div class="dropdown-menu">
+                  <ul class="dropdown">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href={{ url_for('kursy') }}>kursy</a></li>
+                    <li><a href="index.html">cennik</a></li>
+                    <li><a href={{url_for('lektorzy') }}>lektorzy</a></li>
+                    <li><a href="index.html">o nas</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+                    <li><a href="index.html">gra <span><img src="/static/proacademy.png"></span></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+        
+            {% block main %} {% endblock %}
+    
+        
+        <hr>
+
+        <!--Footer-->
+        <div class="footer">
+          <div class="copyright">
+            <h1>&copy; 2019 | Szkoła języka angielskiego | Stargard</h1>
+            <h2><em>All rights reserved.</em></h2>
+            <h2><em>Powered by Proacademy. Created by Proacademy.</em></h2>
+          </div>
+
+
+          <div class="media-icons">
+            <img src="facebook.png">
+            <img src="twitter.png">
+            <img src="youtube.png">
+            <img src="instagram.png">
+          </div>
+        </div>
+        <!--contact page
+        <div class="contact-container">
+          <h4>Skontaktuj się z nami</h4>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2382.431747411992!2d15.037711115905813!3d53.33552718322258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4700b9b37ba50dc1%3A0xc6d9012634817170!2sSzko%C5%82a+J%C4%99zyka+Angielskiego+-+Proacademy.pl!5e0!3m2!1spl!2spl!4v1554669344574!5m2!1spl!2spl"allowfullscreen>
+          </iframe>
+        </div>-->
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  </body>
+</html>

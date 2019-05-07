@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Google fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dokdo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <!--Internal CSS stylesheet-->
+    <link href="/static/styles.css" rel="stylesheet">
+    <title>Proacademy-Game</title>
+  </head>
+  <body>
+      <div class="page">
+          <!--navbar section-->
+          <div class="header">
+            <div class="call-us">
+              <a href="tel:+48883135222"><img src="/static/call-us.png"></a>
+            </div>
+            <div class="logo">
+              <a href={{ url_for('hello') }}><img src="/static/proacademy.png"></a>
+            </div>
+            <nav class="navbar">
+              <ul>
+                <li>
+                  <img src="/static/hamburger2.png">
+                  <div class="dropdown-menu">
+                    <ul class="dropdown">
+                      <li><a href={{ url_for('hello') }}>home</a></li>
+                      <li><a href={{ url_for('kursy') }}>kursy</a></li>
+                      <li><a href="index.html">cennik</a></li>
+                      <li><a href="lektorzy.html">lektorzy</a></li>
+                      <li><a href="index.html">o nas</a></li>
+                      <li><a href="index.html">kontakt</a></li>
+                      <li><a href="index.html">gra <span><img src="/static/proacademy.png"></span></a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+
+        <!--instructions-->
+        <h1> Pola nie zostały poprawnie wypełnione</h1>
+        <hr>
+
+        <!--Footer-->>
+        <div class="footer">
+          <div class="copyright">
+            <h1>&copy; 2019 | Szkoła języka angielskiego | Stargard</h1>
+            <h2><em>All rights reserved.</em></h2>
+            <h2><em>Powered by Proacademy. Created by Proacademy.</em></h2>
+          </div>
+
+
+          <div class="media-icons">
+            <img src="facebook.png">
+            <img src="twitter.png">
+            <img src="youtube.png">
+            <img src="instagram.png">
+          </div>
+        </div>
+
+
+
+      </div>
+  </body>
+</html>

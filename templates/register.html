@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block title %}
+    Proacademy - Rejestracja
+{% endblock %}
+
+        {% block main %}
+        <!--instructions-->
+        <div class="instr">
+            <h1 class="h1"><strong>Proacademy game</strong></h1>
+            
+            <!--register form-->
+            <form action="/register" method="post" id="register">
+                <div class="login-container">
+                    <div class="login-password">
+                        <div class="login-form">
+                            <input type="email" name="username" class="login-input" required placeholder="Email">
+                        </div>
+                        <div class="login-form">
+                                <input type="email" name="confirm-username" class="login-input" required placeholder="Potwierdź email">
+                            </div>
+                        <div class="login-form">
+                            <input type="password" name="new-password" class="login-input" required placeholder="Hasło">
+                        </div>
+                        <div class="login-form">
+                            <input type="password" name="confirm-new-password" class="login-input"  required placeholder="Potwierdź hasło">
+                        </div>
+                        <div class="login-form">
+                            <input type="text" id="teacher" name="teacher" class="login-input" placeholder="*Imię lektora">
+                            <label for="teacher" class="teacher">*Dotyczy uczniów Proacademy</label>
+                        </div>
+                        
+                    </div>
+                        <input type="submit" class="register-button" value="Rejestracja">
+                    
+                        
+                        
+                </div>
+            </form>
+        </div>
+
+        
+        {% endblock %}
+        
